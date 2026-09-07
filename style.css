@@ -1,0 +1,84 @@
+h1{
+    font-size: large;
+    font-family: Georgia, serif;
+    color: rgb(142, 236, 171); /*Teksti värv*/
+
+}
+header h1{
+    padding: 3%;
+    font-variant: small-caps;
+    border-bottom: 2px solid lightgray;
+}
+header{
+    background-color: crimson; /*Tausta värv*/
+    background-image: url("img.png");
+}
+footer{
+    padding: 3%;
+    background-color: crimson;
+    font-variant: small-caps;
+    border-top: 2px solid crimson;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+section#kast1, section#kast2{
+    border: 1px dotted crimson; /*solid, double, dashed, dotted*/
+    width: 80%;
+    margin: 10px;
+    padding: 1%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+section#kast1, section#kast2{
+    border: 1px dotted crimson; /*solid, double, dashed, dotted*/
+    width: 80%;
+    margin: 10px;
+    padding: 1%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/**NAV**/
+nav ul{
+    list-style-type: none; /**Täpp võtab ära**/
+    margin: 0;
+    padding: 0;
+    background-color: rgb(142, 236, 171);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    color: crimson;
+    text-decoration: none; /**Alljoone on kustutatud**/
+    padding: 5px;
+    text-align: center;
+    border-left: 1px solid crimson;
+    border-right: 1px solid crimson;
+    border-radius: 35%;
+    font-variant: all-petite-caps;
+}
+
+nav ul li a:hover{ /**link fookuses - hiir on peal**/
+    background-color: #00ffe3;
+}
+
+nav{
+    padding: 30px;
+    margin: 10px;
+}
+
+main{
+    margin-top: 20px;
+}
