@@ -68,6 +68,11 @@ section#video{
     left: 680px;
 }
 
+section#muusika, iframe{
+    border: 0;
+    border-radius: 12px;
+}
+
 /**NAV**/
 nav ul{
     list-style-type: none; /**Täpp võtab ära**/
