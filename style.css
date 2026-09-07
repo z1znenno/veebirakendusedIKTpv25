@@ -68,10 +68,6 @@ section#video{
     left: 680px;
 }
 
-section#muusika{
-    border: hidden;
-}
-
 /**NAV**/
 nav ul{
     list-style-type: none; /**Täpp võtab ära**/
