@@ -30,3 +30,10 @@ td{
 .nimiA{
     background-color: aqua;
 }
+
+table#hindeline{
+    border: 1px solid black;
+    width: 10%;
+    height: 200px;
+    text-align: center;
+}
