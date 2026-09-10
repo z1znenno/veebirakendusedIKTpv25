@@ -8,22 +8,41 @@
 <body>
 <h1>Tabelid</h1>
 <h2>Lihtne tabel</h2>
-<table>
+<table id="lihtne">
   <tr>
-    <td>
-      A
-    </td>
-    <td>
-      B
-    </td>
+    <td class="nimiA">A</td>
+    <td>B</td>
   </tr>
   <tr>
-    <td>
-      C
+    <td>C</td>
+    <td>D</td>
+  </tr>
+</table>
+
+<h2>
+  Tabel kus on ühendatud lahtrid
+</h2>
+<table id="keeruline1">
+  <tr>
+    <td colspan="2", class="nimiA">A</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>C</td>
+  </tr>
+</table>
+<h2>
+  Veel üks tabel
+</h2>
+<table id="keeruline2">
+  <tr>
+    <td rowspan="2">
+      A
     </td>
-    <td>
-      D
-    </td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>D</td>
   </tr>
 </table>
 </body>
