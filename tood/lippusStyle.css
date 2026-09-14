@@ -26,3 +26,36 @@
 #eesti tr:nth-child(3){/*3.rida*/
     background-color: white;
 }
+
+#Taani{
+    width: 330px;
+    height: 210px;
+    border: 1px solid black;
+    border-spacing: 0;
+    position: absolute;
+    top: 300px;
+    left: 35%;
+}
+
+#Taani tr:nth-child(1) td:nth-child(1), #Taani tr:nth-child(3) td:nth-child(1){
+    background-color: red;
+    width: 65px;
+}
+
+#Taani tr:nth-child(1) td:nth-child(3), #Taani tr:nth-child(3) td:nth-child(3){
+    background-color: red;
+    width: 210px;
+}
+
+#Taani tr:nth-child(1) td:nth-child(2), #Taani tr:nth-child(3) td:nth-child(2){
+    background-color: white;
+}
+
+#Taani td{
+    border: 0 solid lightgray;
+}
+
+#Taani tr:nth-child(2){
+    background-color: white;
+    height: 45px;
+}
