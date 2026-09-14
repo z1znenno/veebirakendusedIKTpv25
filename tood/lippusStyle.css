@@ -59,3 +59,72 @@
     background-color: white;
     height: 45px;
 }
+
+#Belgia{
+    position: absolute;
+    top: 550px;
+    left: 35%;
+    border: 1px solid black;
+    border-spacing: 0;
+    width: 330px;
+    height: 210px;
+}
+
+#Belgia td:nth-child(1){
+    background-color: black;
+}
+
+#Belgia td:nth-child(2){
+    background-color: yellow;
+}
+
+#Belgia td:nth-child(3){
+    background-color: red;
+}
+
+#valgevene{
+    width: 330px;
+    height: 210px;
+    border: 1px solid black;
+    border-spacing: 0;
+    position: absolute;
+    top: 55px;
+    left: 60%;
+}
+
+#valgevene td{
+    border: 0 solid lightgray;
+}
+
+#valgevene tr:nth-child(1) td:nth-child(1){
+    background-color: white;
+    width: 70px;
+    height: 210px;
+}
+
+#valgevene tr:nth-child(1) td:nth-child(2){
+    background-color: red;
+    height: 130px;
+}
+
+#valgevene tr:nth-child(2){
+    background-color: green;
+}
+
+#svets{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-spacing: 0;
+    position: absolute;
+    top: 300px;
+    left: 62%;
+}
+
+#svets td{
+    border: 0 solid lightgray;
+}
+
+#svets td:nth-child(1){
+    background-color: red;
+}
