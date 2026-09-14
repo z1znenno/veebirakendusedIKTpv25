@@ -2,13 +2,14 @@
 <html lang="et">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Tabelid</title>
   <link rel="stylesheet" href="tabelstyle.css">
+  <link rel="stylesheet" href="lippusStyle.css">
 </head>
 <body>
 <h1>Tabelid</h1>
 <h2>Lihtne tabel</h2>
-<table class="lihtne">
+<table id="lihtne">
   <tr>
     <td class="nimiA">A</td>
     <td>B</td>
@@ -22,7 +23,7 @@
 <h2>
   Tabel kus on ühendatud lahtrid
 </h2>
-<table id="keeruline1">
+<table class="keeruline1">
   <tr>
     <td colspan="2", class="nimiA">A</td>
   </tr>
@@ -68,7 +69,7 @@
 <h2>
   Kodune ülesanne
 </h2>
-<table class="lihtne">
+<table class="keeruline1">
   <tr>
     <td colspan="8">
       A
@@ -128,7 +129,18 @@
     </td>
   </tr>
 </table>
-<h1>Lipud</h1>
-<table class="eesti"></table>
+<h1 id="lipud">Lipud</h1>
+<table id="eesti">
+  <caption>Eesti lipp</caption>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
 </body>
 </html>

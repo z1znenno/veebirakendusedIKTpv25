@@ -1,10 +1,10 @@
-.lihtne{
+#lihtne{
     border: 1px solid black;
     width: 30%;
     height: 100px;
     text-align: center;
 }
-table#keeruline1{
+.keeruline1{
     border: 1px solid black;
     border-collapse: collapse;
     width: 10%;
