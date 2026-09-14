@@ -1,0 +1,34 @@
+#valgevene{
+    width: 330px;
+    height: 210px;
+    border: 1px solid black;
+    border-spacing: 0;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+#valgevene td{
+    border: 0 solid lightgray;
+}
+
+#valgevene tr:nth-child(1) td:nth-child(1){
+    background-color: white;
+    width: 70px;
+    height: 210px;
+}
+
+#valgevene tr:nth-child(1) td:nth-child(2){
+    background-color: red;
+    height: 130px;
+}
+
+#valgevene tr:nth-child(2){
+    background-color: green;
+}
+
+h1{
+    position: absolute;
+    top: 28%;
+    left: 40%;
+}
