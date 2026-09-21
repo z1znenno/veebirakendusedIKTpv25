@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Area</title>
+    <link rel="stylesheet" href="mapareaStyle.css">
+</head>
+<body>
+<h1>Map Area Kasutamine</h1>
+<img src="arvutipilt.jpg" alt="See on arvuti pilt" usemap="#arvuti">
+<map name="arvuti">
+    <area shape="circle"  coords="261, 318, 30" href="hambad.html" alt="Hamb">
+    <!-- circle coords (x,y, R) -->
+    <area shape="rect" coords="0, 340, 488, 450" href="klaviatuur.html" alt="Monitor">
+    <!-- rect coords (x,y, x1, y2) -->
+    <!-- kolmnurk - poly - tuleb võta kõik koordinadid vasakolu parema suuna -->
+    <area shape="poly" coords="168, 257, 253, 171, 327, 255" href="silm.html" alt="Silmad">
+    <!-- :O -->
+    <area shape="rect" coords="10, 28, 138, 217" href="omg.html" alt="OMG">
+    <!-- Valgevene -->
+    <area shape="poly" coords="348, 247, 362, 20, 664, 20, 674, 449, 542, 451, 528, 275" href="valgevene.html" alt="valgevene">
+    <!-- Juuksed -->
+    <area shape="rect"  coords="140, 26, 360, 164" href="https://ru.pinterest.com/pin/1149543873632027755/" alt="Juuksed">
+
+
+</map>
+<div id="text">
+    See on mehe hambad.
+    <br>
+    Hambad (ladina keeles dens, mitmuses dentes) on paljudel selgroogsetel loomadel suus leiduvad luustunud seedeelundkonna elundid.
+    <br>
+    Paljude liikide noorloomadele ilmuvad kõigepealt piimahambad, mis isendi täiskasvanuks saamisel asenduvad jäävhammastega, aga kõigil liikidel sellist eristumist ei ole.
+</div>
+<a href="../../index.html">Kodulehele</a>
+</body>
+</html>
