@@ -11,53 +11,120 @@
 <div>
     HTML vormid ja nupud
 </div>
+<br>
 <form action="#">
     <!-- c + tab —> kommentaar -->
-    <!-- Tekstkast -->
-    <label for="nimi">
-        Kirjutage oma nimi:
-    </label>
-    <input type="text" id="nimi" placeholder="Oleg Berezevski">
+    <table border="1">
+        <tr>
+            <td>
+                <!-- Tekstkast -->
+                <label for="nimi">
+                Kirjutage oma nimi:
+                </label>
+            </td>
+            <td>
+                <input type="text" id="nimi" placeholder="Oleg Berezevski">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Sisestage oma email: </label>
+            </td>
+            <td>
+                <input type="email" id="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="telefon">Sisestage oma telefoni number:</label>
+            </td>
+            <td>
+                <input type="tel" id="telefon" name="telefon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- ripploend või rippmenüü -->
+                <label for="stiil">Vali muusika stiil</label>
+            </td>
+            <td>
+                <select name="stiil" id="stiil">
+                    <option value="vali">vali</option>
+                    <option value="hiphop">hiphop</option>
+                    <option value="rap">räp</option>
+                    <option value="kantri">kantri</option>
+                    <option value="rock">rock</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- radio nupud -üks valik mitmest -->
+                <strong>
+                    Kuidas sa muusikat peamiselt kuulad?
+                </strong>
+            </td>
+            <td>
+                <input type="radio" id="Spotify" name="platvorm">
+                <label for="Spotify">Spotify</label>
+                <br>
+                <input type="radio" id="raadio" name="platvorm">
+                <label for="raadio">Raadio</label>
+                <br>
+                <input type="radio" id="vinyyplaat" name="platvorm">
+                <label for="vinyyplaat">Vinüüplaat</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <!-- Checkbox -->
+
+                <fieldset>
+                    <legend>Tee oma valikus - lemmik ansambel</legend>
+                    <input type="checkbox" name="lemmikud" id="rollingstones">
+                    <label for="rollingstones">Rollingstones</label>
+                    <br>
+                    <input type="checkbox" name="lemmikud" id="radiohead">
+                    <label for="radiohead">Radiohead</label>
+                    <br>
+                    <input type="checkbox" name="lemmikud" id="agatakristi">
+                    <label for="agatakristi">Agata Kristi</label>
+                    <br>
+                    <input type="checkbox" name="lemmikud" id="lsp">
+                    <label for="lsp">LSP</label>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- range - vahemik -->
+                <label for="tund">Mitu tundi päevas sa kuulad muusikat</label>
+            </td>
+            <td>
+                0<input type="range" id="tund" min="0" max="24">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="viimanepaev">Mis päevas sa kuulsid muusikat viimases kordas?</label>
+
+            </td>
+            <td>
+                <input type="date" id="viimanepaev" name="viimanepaev">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="muusikafail">Lisage muusika näide</label>
+            </td>
+            <td>
+                <input type="file" id="muusikafail" name="muusikafail">
+            </td>
+        </tr>
+    </table>
     <br>
-    <!-- ripploend või rippmenüü -->
-    <label for="stiil">Vali muusika stiil</label>
-    <select name="stiil" id="stiil">
-        <option value="vali">vali</option>
-        <option value="hiphop">hiphop</option>
-        <option value="rap">räp</option>
-        <option value="kantri">kantri</option>
-        <option value="rock">rock</option>
-    </select>
-    <br>
-    <!-- radio nupud -üks valik mitmest -->
-    <strong>
-        Kuidas sa muusikat peamiselt kuulad?
-    </strong>
-    <br>
-    <input type="radio" id="Spotify" name="platvorm">
-    <label for="Spotify">Spotify</label>
-    <br>
-    <input type="radio" id="raadio" name="platvorm">
-    <label for="raadio">Raadio</label>
-    <br>
-    <input type="radio" id="vinyyplaat" name="platvorm">
-    <label for="vinyyplaat">Vinüüplaat</label>
-    <br>
-    <!-- Checkbox -->
-    <fieldset>
-        <legend>Tee oma valikus - lemmik ansambel</legend>
-        <input type="checkbox" name="lemmikud" id="rollingstones">
-        <label for="rollingstones">Rollingstones</label>
-        <br>
-        <input type="checkbox" name="lemmikud" id="radiohead">
-        <label for="radiohead">Radiohead</label>
-        <br>
-        <input type="checkbox" name="lemmikud" id="agatakristi">
-        <label for="agatakristi">Agata Kristi</label>
-        <br>
-        <input type="checkbox" name="lemmikud" id="lsp">
-        <label for="lsp">LSP</label>
-    </fieldset>
+    <input type="button" onclick="alert('Tere maailma')" value="Vorm täidetud">
 </form>
 </body>
 </html>
