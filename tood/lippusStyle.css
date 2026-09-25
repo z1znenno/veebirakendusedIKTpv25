@@ -16,15 +16,15 @@
 
 /*pseudoelementide kasutamine*/
 #eesti tr:nth-child(1){ /*1.rida*/
-    background-color: blue;
+    background-color: white;
 }
 
 #eesti tr:nth-child(2){/*2. rida*/
-    background-color: black;
+    background-color: blue;
 }
 
 #eesti tr:nth-child(3){/*3.rida*/
-    background-color: white;
+    background-color: red;
 }
 
 #Taani{
