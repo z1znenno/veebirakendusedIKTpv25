@@ -139,10 +139,43 @@
         </tr>
         <tr>
             <td>
-                <label for="muusikafail">Lisage muusika näide</label>
+                <label for="muusikafail">Lisage muusika näidis</label>
             </td>
             <td>
                 <input type="file" id="muusikafail" name="muusikafail" accept=".mp3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="arvamus">Mida arvad muusika kuulamisest koolis?</label>
+            </td>
+            <td>
+                <textarea name="arvamus" id="arvamus" cols="30" rows="10"></textarea>
+            </td>
+            <td>
+                <div id="vastus10"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Kas sa kuulad raadiot?</td>
+            <td>
+                <input type="radio" id="jah" name="jahei" value="Jah">
+                <label for="jah">Jah</label>
+                <br>
+                <input type="radio" id="ei" name="jahei" value="Ei">
+                <label for="ei">Ei</label>
+            </td>
+            <td>
+                <div id="vastus11"></div>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="radiojaam">Milliseid raadiojaamu oskad nimetada?</label></td>
+            <td>
+                <input type="text" id="radiojaam" placeholder="humorFM">
+            </td>
+            <td>
+                <div id="vastus12"></div>
             </td>
         </tr>
         <tr>

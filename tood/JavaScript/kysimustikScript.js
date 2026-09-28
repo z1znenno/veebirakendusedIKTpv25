@@ -13,6 +13,16 @@ function koikFunc() {
     let valik2 = checkboxValik();
     let tund = rangeValik();
     let stiil = selectValik();
+    let arvamus = ArvamuseLugemineKastist();
+    let valik3 = radioValik2();
+    let radiojaam = RadioJaamLugemineKastist();
+
+    if(valik3 == "Jah"){
+        valik3 = "Sa kuulad raadio!"
+    }
+    else{
+        valik3 = "Sa ei kuula raadiot";
+    }
 
     vastusKoik.innerHTML = "Sinu nimi on: " + nimi + '<br>' +
         "Telefon: " + tel + '<br>' +
@@ -20,7 +30,10 @@ function koikFunc() {
         "Sinu lemmikstiil: " + stiil + '<br>' +
         "Sinu lemmikud: " + valik2 + '<br>' +
         "Sa kasutad: " + valik + '<br>' +
-        "Sa kuulad muusikat " + tund + " tundi";
+        "Sa kuulad muusikat " + tund + " tundi" + '<br>' +
+        "Sa arvad muusika kuulamisest koolis: " + '<br>' + arvamus + '<br>' +
+        valik3 + '<br>' +
+        "Radiojaamad: " + radiojaam + '<br>';
 }
 
 
@@ -146,6 +159,59 @@ function rangeValik() {
 
     return tund.value;
 }
+
+function ArvamuseLugemineKastist() {
+    let vastus10 = document.getElementById("vastus10");
+    let arvamus = document.getElementById("arvamus");
+
+    if (arvamus.value == null || arvamus.value === "") {
+        vastus10.innerHTML = "Arvamuse ei ole";
+    }
+    else{
+        vastus10.innerHTML = "Sinu sisestatud arvamus on: " + arvamus.value;
+    }
+
+    return arvamus.value;
+}
+
+function radioValik2(){
+    let vastus11 = document.getElementById("vastus11");
+    let jah = document.getElementById("jah");
+    let ei = document.getElementById("ei");
+
+    let valik3 = "";
+
+    if(jah.checked){
+        valik3 = jah.value;
+        vastus11.innerHTML = "Sa kuulad raadio";
+    }
+    else if (ei.checked){
+        valik3 = ei.value;
+        vastus11.innerHTML = "Sa ei kuula raadiot";
+
+    }
+    else {
+        valik3 = "Palun tee oma valik"
+    }
+
+
+    return valik3;
+}
+
+function RadioJaamLugemineKastist() {
+    let vastus12 = document.getElementById("vastus12");
+    let radiojaam = document.getElementById("radiojaam");
+
+    if (radiojaam.value == null || radiojaam.value === "") {
+        vastus12.innerHTML = "Nimi ei ole";
+    }
+    else{
+        vastus12.innerHTML = "Sinu sisestatud radiojaamad on: " + radiojaam.value;
+    }
+
+    return radiojaam.value;
+}
+
 
 function puhasta(){
 
