@@ -34,3 +34,11 @@ img{
 h1{
     text-align: center;
 }
+
+#omg{
+    width: 330px;
+    height: 210px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
