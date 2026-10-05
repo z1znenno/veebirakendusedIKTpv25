@@ -70,3 +70,17 @@ input[type=button]{
     text-align: center;
     left: 10px;
 }
+
+#prog{
+    border: 3px solid #8eecab;
+    border-radius: 50px;
+    font: bold 14px "Segoe Script";
+    background: beige;
+    text-decoration: none;
+    color: #000000;
+    padding: 4px;
+}
+
+#prog:hover{
+    background-color: #b886ea;
+}
