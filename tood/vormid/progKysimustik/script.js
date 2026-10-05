@@ -118,6 +118,8 @@ function selectValik() {
 function puhasta(){
     let kokku = document.getElementById("kokku");
 
+    let pilt = document.getElementById("jaheiPilt");
+    pilt.src = "../../pildid/vali.png";
     vastus1.innerHTML = "";
     vastus2.innerHTML = "";
     vastus3.innerHTML = "";
