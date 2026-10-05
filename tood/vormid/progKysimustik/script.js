@@ -1,3 +1,5 @@
+//Milliseid programmeerimiskeeli sa tead?
+
 function checkboxValik(){
     let vastus1 = document.getElementById("vastus1");
     let js = document.getElementById("javaScript")
@@ -32,6 +34,8 @@ function checkboxValik(){
     return valik;
 }
 
+//Mida arvad programmeerimise õppimisest?
+
 function ArvamuseLugemineKastist() {
     let vastus2 = document.getElementById("vastus2");
     let arvamus = document.getElementById("arvamus");
@@ -46,6 +50,8 @@ function ArvamuseLugemineKastist() {
     return arvamus.value;
 }
 
+//Mitu tundi nädalas tegeled programmeerimisega?
+
 function rangeValik() {
     let vastus3 = document.getElementById("vastus3");
     let tund = document.getElementById("tund");
@@ -54,6 +60,8 @@ function rangeValik() {
 
     return tund.value;
 }
+
+//Kas sulle meeldib programmeerida?
 
 function radioValik2(){
     let vastus4 = document.getElementById("vastus4");
@@ -83,6 +91,8 @@ function radioValik2(){
     return valik2;
 }
 
+//Milliseid programmeerimisega seotud tööriistu oskad nimetada?
+
 function ide() {
     let vastus5 = document.getElementById("vastus5");
     let ide = document.getElementById("IDE");
@@ -96,6 +106,8 @@ function ide() {
 
     return ide.value;
 }
+
+//Millist programmeerimiskeelt sooviksid kõige rohkem õppida?
 
 function selectValik() {
     let vastus6 = document.getElementById("vastus6");
