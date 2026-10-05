@@ -63,3 +63,10 @@ input[type=button]{
     background: linear-gradient(90deg, #e467c8, #9b55e8
     );
 }
+
+#valitudPilt{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    left: 10px;
+}

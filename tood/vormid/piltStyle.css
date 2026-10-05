@@ -1,0 +1,26 @@
+img#randomPilt{
+    border: 2px solid lawngreen;
+    border-radius: 50%;
+    width: 300px;
+}
+
+input[type=button]{
+    border: 2px solid lawngreen;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: greenyellow;
+}
+
+#valik{
+    border: 2px solid lawngreen;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: black;
+    color: #30ff00;
+}
+
+div#vastus{
+    text-align: center;
+    border: 2px solid lawngreen;
+    padding: 10px;
+}

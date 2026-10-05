@@ -213,6 +213,22 @@ function RadioJaamLugemineKastist() {
 }
 
 
-function puhasta(){
+function radioValikPilt(){
+    let platvorm = document.getElementsByName("platvorm"); //mitu elemendi ühe nimega
+    logo = [
+        "https://www.scdn.co/i/_global/twitter_card-default.jpg",
+        "https://images.hind.ee/5901/85/radijo-imtuvas-blaupunkt-er10.jpg",
+        "https://muzikercdn.com/uploads/products/25191/2519159/thumb_base_e688f03b.jpg"
+    ];
+    let valitudPilt = document.getElementById("valitudPilt");
 
+
+    for (let i = 0; i < platvorm.length; i++){
+        if (platvorm[i].checked){
+            valitudPilt.src = logo[i];
+        }
+        else{
+            //alert("Tee oma valik");
+        }
+    }
 }
