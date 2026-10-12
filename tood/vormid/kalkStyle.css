@@ -12,6 +12,7 @@ section#yld{
     padding: 1px;
     background: linear-gradient(to bottom, #9595cd, #6fb4cd);
     font: 13px "Segion", cursive;
+    text-align: center;
 }
 
 #smile{
@@ -19,7 +20,7 @@ section#yld{
     height: 100px;
     position: absolute;
     top: 10%;
-    left: 15%;
+    left: 2%;
 }
 
 #kalk2{
