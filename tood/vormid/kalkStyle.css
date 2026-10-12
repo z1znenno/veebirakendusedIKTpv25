@@ -1,0 +1,32 @@
+section#yld{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+#kalk1{
+    border: 1pt solid grey;
+    border-radius: 10pt;
+    width: 30%;
+    padding: 1px;
+    background: linear-gradient(to bottom, #9595cd, #6fb4cd);
+    font: 13px "Segion", cursive;
+}
+
+#smile{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+#kalk2{
+    background: linear-gradient(to bottom, #9595cd, #c690e4);
+    font: 13px "Segion", cursive;
+    border: 1pt solid grey;
+    border-radius: 10pt;
+    width: 30%;
+    padding: 1px;
+}
