@@ -5,6 +5,7 @@
     <title>Kalkulaatorid</title>
     <link rel="stylesheet" href="kalkStyle.css">
     <script src="../JavaScript/kalk1Script.js"></script>
+    <script src="../JavaScript/kalk2Script.js"></script>
 </head>
 <body>
 <h1>Kalkulaatorid</h1>
@@ -27,16 +28,19 @@
     <section id="kalk2">
         <h2>Joogi kalkulaator</h2>
         <label for="kogus">Mitu tk soovid: </label>
-        <input type="number" id="kogus" min="1" max="10" step="1" value="10">
+        <input type="number" id="kogus" min="1" max="10" step="1" value="1" onchange="jookideValik()">
         <label for="joogiValik">Vali jooki: </label>
-        <select name="Joogi valik" id="joogiValik">
+        <select name="JoogiValik" id="joogiValik" onchange="jookideValik()">
             <option value="Vali">Vali...</option>
             <option value="Coca-Cola">Coca-Cola</option>
             <option value="Fanta">Fanta</option>
             <option value="Lipton">Lipton</option>
             <option value="Vesi">Vesi</option>
         </select>
+        <br>
+        <div id="vastus2"></div>
     </section>
+
     <section id="kalk3"></section>
 </section>
 </body>
