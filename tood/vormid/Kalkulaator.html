@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="kalkStyle.css">
     <script src="../JavaScript/kalk1Script.js"></script>
     <script src="../JavaScript/kalk2Script.js"></script>
+    <script src="../JavaScript/kalk3Script.js"></script>
 </head>
 <body>
 <h1>Kalkulaatorid</h1>
@@ -41,7 +42,31 @@
         <div id="vastus2"></div>
     </section>
 
-    <section id="kalk3"></section>
+    <section id="kalk3">
+        <h2>Pindala ja ruumala kalkulaator meetritega</h2>
+        <label class="a" for="a">A: </label>
+        <input type="number", class="a", min="1", max="100", step="1", value="1", onchange="arvuta_suurus()">
+        <br>
+        <label class="b",for="b">B: </label>
+        <input type="number", class="b", mix="1", max="100", step="1", value="1", onchange="arvuta_suurus()">
+        <br>
+        <label class="c" for="c", hidden="true">C: </label>
+        <input type="number", class="c", mix="1", max="100", step="1", value="1", hidden="true", onchange="arvuta_suurus()">
+        <br>
+        <input type="radio" name="valik2" id="pindala" value="pindala", onchange="arvuta_suurus()">
+        <label for="pindala">Pinadala</label>
+        <select name="kujund" id="kujund" onchange="arvuta_suurus()">
+            <option value="Vali">Vali...</option>
+            <option value="Ring">Ring</option>
+            <option value="Ruut">Ruut</option>
+            <option value="Kolmnurk">Kolmnurk</option>
+        </select>
+        <br>
+        <input type="radio" name="valik2" id="ruumala" value="ruumala", onchange="arvuta_suurus()">
+        <label for="ruumala">Ruumala</label>
+        <br>
+        <div id="vastus3"></div>
+    </section>
 </section>
 </body>
 </html>

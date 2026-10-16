@@ -10,7 +10,7 @@ section#yld{
     border-radius: 10pt;
     width: 30%;
     padding: 1px;
-    background: linear-gradient(to bottom, #9595cd, #6fb4cd);
+    background: linear-gradient(to right, #9595cd, #c690e4);
     font: 13px "Segion", cursive;
     text-align: center;
 }
@@ -24,7 +24,16 @@ section#yld{
 }
 
 #kalk2{
-    background: linear-gradient(to bottom, #9595cd, #c690e4);
+    background: #c690e4;
+    font: 13px "Segion", cursive;
+    border: 1pt solid grey;
+    border-radius: 10pt;
+    width: 30%;
+    padding: 1px;
+}
+
+#kalk3{
+    background: linear-gradient(to left, #9595cd, #c690e4);
     font: 13px "Segion", cursive;
     border: 1pt solid grey;
     border-radius: 10pt;
