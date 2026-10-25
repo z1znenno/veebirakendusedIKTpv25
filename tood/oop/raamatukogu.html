@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Objektid ja meetodid</title>
+    <script src="../JavaScript/raamatukoguScript.js"></script>
+</head>
+<body>
+    <h1>JS: Objektid ja meetodid</h1>
+
+    <h2>Raamat</h2>
+    <input type="button" value="Raamatu kirjeldus" onclick="naitaKirjeldus()">
+    <div id="vastus"></div>
+    <br>
+    <label for="uusAasta">Uus väljaandmise aasta: </label>
+    <input type="number" id="uusAasta" min="1" max="2026" step="1" value="1930">
+    <input type="button" value="Muuda aastat" onclick="muudaAastat()">
+    <div id="vastus2"></div>
+
+    <h2>Raamatukogu</h2>
+    <input type="button" value="Kõik raamatud" onclick="naitaRaamatud()">
+    <div id="vastus3"></div>
+    <br>
+    <label for="pealkiri">Pealkiri: </label>
+    <input type="text" id="pealkiri">
+    <br>
+    <label for="autor">Autor: </label>
+    <input type="text" id="autor">
+    <br>
+    <label for="aasta">Aasta: </label>
+    <input type="number" id="aasta" min="1" max="2026" step="1">
+    <br>
+    <input type="button" value="Lisa raamat" onclick="lisaUusRaamat()">
+    <div id="vastus4"></div>
+    <br>
+    <input type="button" value="Raamatute koguarv" onclick="naitaKoguarv()">
+    <div id="vastus5"></div>
+    <br>
+    <input type="button" value="Pärast 2000. aastat" onclick="naitaParast2000()">
+    <div id="vastus6"></div>
+
+    <h3>Minu meetod: autori raamatud</h3>
+    <p>Meetod autoriRaamatud() otsib raamatukogust kõik raamatud, mille on kirjutanud antud autor.</p>
+    <label for="autoriNimi">Autor: </label>
+    <input type="text" id="autoriNimi" value="Andrus Kivirähk">
+    <input type="button" value="Otsi" onclick="otsiAutor()">
+    <div id="vastus7"></div>
+</body>
+</html>
