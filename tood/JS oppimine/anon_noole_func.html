@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <title>Funktsioonid</title>
+  <script src="../JavaScript/anon_noole_funcScript.js"></script>
+</head>
+<body>
+<h1>JS: Funktsioonid</h1>
+
+<h2>1. Erinevad funktsioonid</h2>
+<input type="button" value="Klassikaline funktsioon" onclick="naitaNimi()">
+<input type="button" value="Noolefunktsioon" onclick="naitaNimi2()">
+<div id="vastus1"></div>
+
+<h2>2. Argumendiga funktsioon</h2>
+<label for="kuupaev">Kuupäev: </label>
+<input type="text" id="kuupaev" value="19.07.25">
+<input type="button" value="Näita kuupäeva" onclick="naitaKuupaev()">
+<div id="vastus2"></div>
+
+<h2>3. Teadmata hulk</h2>
+<label for="arvud">Arvud (komaga eraldatud): </label>
+<input type="text" id="arvud" value="4,8,15,16,23,42">
+<input type="button" value="Arvuta" onclick="naitaArvudeInfo()">
+<div id="vastus3"></div>
+
+<h2>4. Salajane sõnum</h2>
+<label for="sonum">Sõnum: </label>
+<input type="text" id="sonum" value="Tere maailm">
+<input type="button" value="Muuda salajaseks" onclick="naitaSalajane()">
+<div id="vastus4"></div>
+
+<h2>5. Unikaalsed nimed</h2>
+<label for="nimed">Nimed (komaga eraldatud): </label>
+<input type="text" id="nimed" value="Kati,Mati,Kati,Mari,Mati,Jüri">
+<input type="button" value="Leia unikaalsed" onclick="naitaUnikaalsed()">
+<div id="vastus5"></div>
+</body>
+</html>
