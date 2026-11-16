@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"
+            integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M="
+            crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="queryStyle.css">
+    <script>
+        $(document).ready(function(){
+            $('#kuva').hide();
+            //nupu peida vajutamine
+            $('#peida').click(function(){
+                $('#sisu').hide(500);
+                $(this).hide();
+                $('#kuva').show();
+            });
+            //nupu kuva vajutamine
+            $('#kuva').click(function(){
+                $('#sisu').show(500);
+                $(this).hide();
+                $('#peida').show();
+            });
+        });
+        function start(){
+            $('#sisu').draggable() //lohistada hiirega veebilehel
+            $('#pilt').draggable()
+            $('#sisu').bind("drag", xyKoordinat)
+            $('#pilt').bind("drag", xyKoordinat)
+        }
+        function xyKoordinat(event, ui){
+            let koht = ui.offset;
+            $('#vastus').html('x: ' + koht.x + 'px, y: ' + koht.y + 'px');
+        }
+    </script>
+</head>
+<body>
+<header>
+    <h1>jQuery kasutamine</h1>
+</header>
+<main>
+    <input type="button" value="---->" id="paremale" onclick="$('#sisu, h2').animate({left : '500px'}, 1000); $(this).hide(); $('#vasakule').show();">
+    <input type="button" value="<----" id="vasakule" style="display: none" onclick="$('#sisu, h2').animate({left : '0px'}, 1000); ; $(this).hide(); $('#paremale').show();">
+    <input type="button" value="^" id="up" style="display: none" onclick="$('#sisu, h2').animate({top : '0px'}, 1000); $(this).hide(); $('#down').show();">
+    <input type="button" value="v" id="down" onclick="$('#sisu, h2').animate({top : '500px'}, 1000); $(this).hide(); $('#up').show();">
+
+    <input type="button" value="Peida" id="peida">
+    <input type="button" value="Kuva" id="kuva">
+
+    <section>
+        <h2>
+            jQuery File upload
+        </h2>
+        <div id="sisu" onload="start()">
+            File Upload widget with multiple file selection, drag&amp;drop support, progress bar, validation and preview images, audio and video for jQuery.
+        </div>
+    </section>
+    <section>
+        <img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/1200/external-arch-linux-composed-of-nonfree-and-open-source-software-logo-tritone-tal-revivo.jpg" alt="linux" id="pilt", onload="start()">
+    </section>
+
+    <div id="vastus"></div>
+</main>
+</body>
+</html>
