@@ -5,17 +5,63 @@
     <meta charset="UTF-8">
     <title>Oleg Veebirakenduste aluste tööd</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js" integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#kuva').hide();
+            //nupu peida vajutamine
+            $('#peida').click(function(){
+                $('#kast1').hide(500);
+                $('#kast2').hide(250);
+                $('footer').hide(250);
+                $('header').hide(250);
+                $('#nav').hide(500);
+                $(this).hide();
+                $('#kuva').show();
+            });
+            //nupu kuva vajutamine
+            $('#kuva').click(function(){
+                $('#kast1').show(500);
+                $('#kast2').show(250);
+                $('footer').show(250);
+                $('header').show(250);
+                $('#nav').show(500);
+                $(this).hide();
+                $('#peida').show();
+            });
+            $('#raputa').click(function(){
+                $('#kast1').effect('shake', {direction: 'left', distance: 20, times: 4}, 500);
+                $('#kast2').effect('shake', {direction: 'left', distance: 20, times: 4}, 500);
+                $('footer').effect('shake', {direction: 'left', distance: 20, times: 4}, 500);
+                $('header').effect('shake', {direction: 'left', distance: 20, times: 4}, 500);
+                $('#nav').effect('shake', {direction: 'left', distance: 20, times: 4}, 500);
+            });
+        });
+        function start(){
+            $('#kast1').draggable();
+            $('#kast2').draggable();
+            $('header').draggable();
+            $('#kast1').bind("drag", xyKoordinat)
+            $('#kast2').bind("drag", xyKoordinat)
+        }
+        function xyKoordinat(event, ui){
+            let koht = ui.offset;
+            $('#vastus').html('x: ' + koht.left + 'px, y: ' + koht.top + 'px');
+        }
+
+    </script>
 </head>
-<body>
+<body onload="start()">
 <!--Veebilehe sisu-->
 <!--päis-->
 <header>
-    <h1>
+    <h1 id="title">
         Oleg Veebirakenduste aluste tööd
     </h1>
 </header>
 <!--Navigeerimis menüü-->
-<nav>
+<nav id="nav">
     <ul>
         <li>
             <a href="index.html">Kodu</a>
@@ -45,16 +91,26 @@
             Palun vajuta teise lingi pealt ning kontrolli et sisu on täidetud
         </p>
     </section>
-    <section id="kast2">
+    <section id="kast2" onload="start()">
         <h2>
             Põnev pilt
         </h2>
-        <div>
-            <img src="img.png" alt="See on ise joonistatud pilt">
-
-        </div>
+        <img id="pilt" src="img.png" alt="See on ise joonistatud pilt">
     </section>
-
+    <section>
+        <input type="button" value="Peida" id="peida">
+        <input type="button" value="Kuva" id="kuva">
+        <input type="button" value="Raputa" id="raputa">
+        <br>
+        <br>
+        <input type="button" value="---->" id="paremale" style="display: none"  onclick="$('footer').animate({right : '0px'}, 1000); $(this).hide(); $('#vasakule').show();">
+        <input type="button" value="<----" id="vasakule" onclick="$('footer').animate({right : '500px'}, 1000); ; $(this).hide(); $('#paremale').show();">
+        <input type="button" value="^" id="up" onclick="$('footer').animate({bottom : '300px'}, 1000); $(this).hide(); $('#down').show();">
+        <input type="button" value="v" id="down" style="display: none"  onclick="$('footer').animate({bottom : '0px'}, 1000); $(this).hide(); $('#up').show();">
+        <br>
+        <br>
+        <div id="vastus"></div>
+    </section>
 </main>
 <!--Jalus-->
 <footer>

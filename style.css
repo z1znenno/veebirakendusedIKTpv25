@@ -32,6 +32,8 @@ section#kast1, section#kast2{
 }
 
 section#kast1, section#kast2{
+    position: relative;
+    left: 0;
     border: 1px dotted crimson; /*solid, double, dashed, dotted*/
     width: 80%;
     margin: 10px;
@@ -119,4 +121,9 @@ main{
 body{
     margin: 0;
     padding: 0;
+}
+
+#pilt{
+    position: relative;
+    left: 0;
 }
