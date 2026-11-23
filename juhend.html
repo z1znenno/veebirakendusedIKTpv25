@@ -3,7 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Oleg Veebirakenduste aluste tööd</title>
+    <link rel="stylesheet" href="juhendStyle.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            //nupu peida vajutamine
+            $('#peida').click(function(){
+                $('header').hide(500);
+                $('nav').hide(500);
+                $('footer').hide(500);
+                $('h2').hide(500);
+                $('p').hide(500);
+                $('ol').hide(500);
+            });
+            //nupu kuva vajutamine
+            $('#kuva').click(function(){
+                $('header').show(500);
+                $('nav').show(500);
+                $('footer').show(500);
+                $('h2').show(500);
+                $('p').show(500);
+                $('ol').show(500);
+            });
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -40,23 +64,15 @@
     <p>
         Veebilehel on rakendatud mitmed jQuery efektid. <strong>Proovi neid!</strong>
     </p>
-    <p>
-        Nupud:
-    </p>
     <ul>
-        <li><strong>Näita</strong> – näitab kõik juhendid.</li>
-        <li><strong>Peida</strong> – peidab kõik juhendid.</li>
+        <li><input id="kuva" type="button" value="Kuva"> – näitab kogu leht.</li>
+        <li><input id="peida" type="button" value="Peida"> – peidab kogu leht.</li>
     </ul>
-    <p>
-        <em>Klikki pealkirjale, et saada juhendeid!</em>
-    </p>
     <ol>
-        <li><strong>Teksti värvi muutmine</strong> <em>(animate, mouseenter, mouseleave)</em> – vii hiir teksti peale ja värv muutub, vii hiir ära ja värv läheb tagasi.</li>
-        <li><strong>Liikumine ekraanil</strong> <em>(animate)</em> – nupud <strong>&lt;----</strong> / <strong>----&gt;</strong> ja <strong>^</strong> / <strong>v</strong> liigutavad elementi.</li>
-        <li><strong>jQuery sektsioon peitmine/näitamine</strong> <em>(slideToggle)</em> – vajuta nupule ja sektsioon libiseb kinni või lahti.</li>
-        <li><strong>Pildi kuvamine ja peitmine</strong> <em>(fadeIn, fadeOut)</em> – pilt ilmub või kaob sujuvalt.</li>
-        <li><strong>Teksti suuruse muutmine</strong> <em>(animate)</em> – tekst muutub sujuvalt suuremaks või väiksemaks.</li>
-        <li><strong>Elementide lohistamine</strong> <em>(draggable)</em> – lohista kasti hiirega, all on näha koordinaadid.</li>
+        <li><strong>Liikumine ekraanil</strong> - nupud <strong><----</strong> / <strong>----></strong> ja <strong>^</strong> / <strong>v</strong> liigutavad elementi.</li>
+        <li><strong>jQuery sektsioon peitmine/näitamine</strong> - vajuta nupule ja kõik leht peidab või näitab.</li>
+        <li><strong>Elementide lohistamine</strong> - lohista kasti hiirega, all on näha koordinaadid.</li>
+        <li><strong>Lehe raputamine</strong> - Kõik leht raputab</li>
     </ol>
 </main>
 <footer>
